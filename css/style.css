@@ -1,0 +1,309 @@
+body {
+    font-family: book antiqua;
+    background-color: darkturquoise;
+}
+
+h1 {
+    margin-top: 7px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 33px;
+    color: azure;
+    text-shadow: 3px 3px 1px black,
+        3px -3px 1px black,
+        -3px 3px 1px black,
+        -3px -3px 1px black;
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    border: 7px dashed grey;
+    background-color: azure;
+    box-sizing: border-box;
+}
+
+td {
+    cursor: pointer;
+    text-align: center;
+    font-size: 33px;
+    color: azure;
+    background-color: grey;
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.container {
+    margin: auto;
+    margin-top: 33px;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-area {
+    min-width: 350px;
+    width: 40%;
+    height: 40px;
+    line-height: 37px;
+    background-color: grey;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 1px solid azure;
+    box-shadow: 0 3px 3px midnightblue;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.p1-area,
+.p2-area {
+    font-size: 25px;
+    color: azure;
+    width: 47.5%;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.next-turn {
+    width: 10%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+    background-color: salmon;
+    color: azure;
+    border-radius: 50%;
+    border: 1px solid azure;
+    box-sizing: border-box;
+}
+
+.p1-score,
+.p2-score {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    border: 1px solid azure;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.p1-area {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.p1-score {
+    margin-left: 25px;
+    color: darkblue;
+}
+
+.p2-area {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.p2-score {
+    margin-right: 25px;
+    color: maroon;
+}
+
+
+.game-board {
+    box-shadow: 0 3px 3px midnightblue;
+    border: 2px solid azure;
+    box-sizing: border-box;
+}
+
+.setting-game {
+    display: none;
+    font-size: 50px;
+    text-align: center;
+    line-height: 90px;
+    z-index: 99;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 275px;
+    width: 70%;
+    height: 488px;
+    border-radius: 25px;
+    margin-top: -488px;
+    background-color: azure;
+    opacity: .9;
+}
+
+.mode-type,
+.final-score-range {
+    font-size: 29px;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    margin-top: -40px;
+    margin-bottom: -15px;
+    text-align: left;
+}
+
+.final-score-range {
+    margin-bottom: -11px;
+}
+
+.mode-type .option,
+.final-score-range .option {
+    margin-left: 58.5px;
+    background-color: azure;
+    padding: 7px 11px;
+    border-radius: 50%;
+    border: 3px solid azure;
+    cursor: pointer;
+}
+
+.mode-type .option.one {
+    background-color: salmon;
+}
+
+.mode-type .option.two {
+    background-color: orange;
+    border: 3px solid black;
+}
+
+.final-score-range .option.one {
+    background-color: limegreen;
+    border: 3px solid black;
+}
+
+.final-score-range .option.two {
+    background-color: yellow;
+}
+
+.final-score-range .option.three {
+    background-color: red;
+}
+
+
+.confirm-setting {
+    width: 30%;
+    height: 70px;
+    line-height: 64px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border: 3px solid azure;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: grey;
+    color: azure;
+}
+
+.game-explains {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    border-radius: 50%;
+    border: 1px solid azure;
+    box-shadow: 0 3px 3px midnightblue;
+    width: 32px;
+    height: 32px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.how-to-play {
+    display: block;
+    min-width: 33px;
+    width: 33px;
+    height: 33px;
+    line-height: 27px;
+    margin-top: 7px;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid azure;
+    box-sizing: border-box;
+    box-shadow: 0 3px 3px midnightblue;
+    border-radius: 50%;
+    font-size: 25px;
+    color: azure;
+    background-color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    td {
+        font-size: 25px;
+        color: azure;
+        background-color: grey;
+        min-width: 40px;
+        min-height: 40px;
+        width: 40px;
+        height: 40px;
+        transform: rotate(-90deg);
+    }
+
+    .player-area {
+        margin-top: -10px;
+    }
+
+    .game-board {
+        margin-top: 45px;
+        transform: rotate(90deg);
+        box-shadow: 3px 0 3px midnightblue;
+    }
+
+    .game-explains {
+        margin-top: 45px;
+        width: 85%;
+    }
+
+    .setting-game {
+        font-size: 33px;
+        height: 525px;
+        min-width: 450px;
+    }
+
+    .mode-type,
+    .final-score-range {
+        font-size: 25px;
+    }
+
+    .mode-type .option {
+        margin-left: 33px;
+    }
+
+    .final-score-range .option {
+        margin-left: 35.5px;
+    }
+}
+
+td:hover {
+    opacity: .7;
+}
+
+.how-to-play:hover,
+.confirm-setting:hover {
+    background-color: azure;
+    color: grey;
+    border: 3px solid grey;
+}
+
+td:active {
+    background-color: darkturquoise;
+}
+
+.how-to-play:active,
+.brand:active {
+    margin-top: 10px;
+    box-shadow: 0 0 0 midnightblue;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classic SOS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="player-area">
+            <div class="p1-area">
+                <span class="p1-score">0</span>P1
+            </div>
+            <div class="next-turn">S</div>
+            <div class="p2-area">
+                <span class="p2-score">0</span>P2
+            </div>
+        </div>
+        <div class="game-board">
+            <table>
+                <thead>
+                    <tr class="row-1">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-2">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-3">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-4">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-5">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-6">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-7">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-8">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                    <tr class="row-9">
+                        <td class="blank col-1"></td>
+                        <td class="blank col-2"></td>
+                        <td class="blank col-3"></td>
+                        <td class="blank col-4"></td>
+                        <td class="blank col-5"></td>
+                        <td class="blank col-6"></td>
+                        <td class="blank col-7"></td>
+                        <td class="blank col-8"></td>
+                        <td class="blank col-9"></td>
+                        <td class="blank col-10"></td>
+                        <td class="blank col-11"></td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="setting-game">
+            <ins>Pengaturan</ins>
+            <div class="mode-type">
+                Mode : <br>
+                <span class="option one">Standar</span>
+                <span class="option two">Klasik</span>
+            </div>
+            <div class="final-score-range">
+                Batas skor akhir : <br>
+                <span class="option one">33</span>
+                <span class="option two">66</span>
+                <span class="option three">99</span>
+            </div>
+            <div class="confirm-setting">OK</div>
+        </div>
+    </div>
+    <div class="game-explains">
+        <div class="brand"><img src="css/img/kU-dark.ico"></div>
+        <h1>Classic SOS</h1>
+        <span class="how-to-play">?</span>
+    </div>
+    <audio src="audio/Cartoon_Cowbell_editted_.7_sec.mp3" class="get-score"></audio>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
