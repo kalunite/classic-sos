@@ -403,4 +403,5 @@ confirmSetting.addEventListener(`click`, () => {
     settingGame.style.display = `none`;
 })
 
+// * execute program here
 gamePlay();
